@@ -1,35 +1,29 @@
-var pingPong = function(numbers) {
-  for (var i = 1; i <= numbers.length; i += 1) {
-  	if (numbers[i] % 15 === 0) {
-  		numbers.splice(i, 1, "Ping-Pong");
-    } else if (numbers[i] % 5 === 0) {
-      numbers.splice(i, 1, "Pong");
-    } else if (numbers[i] % 3 === 0) {
-      numbers.splice(i, 1, "Ping");
-    }
-  }
-  return numbers;
+function Pizza(sizeCost, meatCost, vegetableCost, sauceCost) {
+  this.sizeCost = sizeCost;
+  this.meatCost = meatCost;
+  this.vegetableCost = vegetableCost;
+  this.sauceCost = sauceCost;
 }
 
-var buildArray = function(numInput) {
-  var array = [];
-  for (var i = 1; i <= numInput; i+=1) {
-	   array.push(i);
-  }
-  return array = pingPong(array);
+Pizza.prototype.pizzaQuote = function () {
+
 }
 
 $(document).ready(function() {
-  $("form#numbers").submit(function(event) {
-    var numInput = parseInt($("input#numInput").val());
-    var list = buildArray(numInput);
-
-    var newHTML = $.map(list, function(value) {
-      return('<li>' + value + '</li>');
-    });
-    $("#output").html(newHTML.join(""));
-
+  $("form#menu").submit(function(event) {
     event.preventDefault();
-  });
+    var ifSmall = $("input#sm").val();
+    var ifMedium = $("input#md").val();
+    var ifLarge = $("input#lg").val();
+    var meatChoice = $("input.meat").val();
+    var vegChoice = $("input.vegetable").val();
+    var sauceChoice = $("input.sauce").val();
 
+    var pizzaOrder = new Pizza(sizeChoice, meatChoice, vegChoice, ifSmall, ifMedium, ifLarge) {
+      
+    }
+
+
+
+  });
 });

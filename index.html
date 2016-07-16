@@ -5,7 +5,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <script src="js/jquery-3.0.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Carlito's Pizzeria</title>
+    <title>Pan Asian Pizza Corporation</title>
   </head>
   <body>
     <div class="container">
@@ -17,57 +17,63 @@
         of traditional New York pizza with the crispy awesomeness that is the
         Won-Ton.
       </p>
+      <h3>Tell Us What You Want And I'll Give You A Quote!</h3>
       <div class="row">
 
         <div class="col-md-4">
           <h4>What size pizza do you want grasshopper?</h4>
-          <div class="checkbox">
-            <label><input type="checkbox" value="Sm">Small</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="Md">Medium</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="Lg">Large</label>
-          </div>
-        </div>
 
-        <div class="col-md-4">
-          <h4>Meat Choices - Find your inner savage</h4>
-          <div class="checkbox">
-            <label><input type="checkbox" value="meat1">Bulgogi Beef</label>
+          <form id="menu">
+            <div class="checkbox">
+              <label><input type="checkbox" id="size" value="sm">Small</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" id="size" value="md">Medium</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" id="size" value="lg">Large</label>
+            </div>
           </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="meat2">Rattlesnake</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="meat3">Roasted Pheasant</label>
-          </div>
-          <h4>Vegetables and Stuff - Rediscover the Australopithecus in You</h4>
-          <div class="checkbox">
-            <label><input type="checkbox" value="veg1">Swiss Chard</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="Md">Bamboo</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="Lg">Oyster Mushrooms</label>
-          </div>
-        </div>
 
-        <div class="col-md-4">
-          <h4>Lick Your Lips - It's Time for That Sauce</h4>
-          <div class="checkbox">
-            <label><input type="checkbox" value="sauce1">Kung Pao Spicy</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="sauce2">Cashew and Ginger</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" value="sauce3">Mandarin Orange and Soy</label>
-          </div>
-        </div>
+          <div class="col-md-4">
+            <h4>Meat Choices - Find your inner savage</h4>
+            <div class="checkbox">
+              <label><input type="checkbox" class="meat">Bulgogi Beef</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" class="meat">Rattlesnake</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" class="meat">Roasted Pheasant</label>
+            </div>
 
+            <h4>Vegetables and Stuff - Rediscover the Australopithecus in You</h4>
+            <div class="checkbox">
+              <label><input type="checkbox" class="vegetable">Swiss Chard</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" class="vegetable">Bamboo</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" class="vegetable">Oyster Mushrooms</label>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <h4>Lick Your Lips - It's Time for That Sauce</h4>
+            <div class="checkbox">
+              <label><input type="checkbox" class="sauce">Kung Pao Spicy</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" class="sauce">Cashew and Ginger</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" class="sauce">Mandarin Orange and Soy</label>
+            </div>
+          </div>
+
+          <button id="submitOrder" button-type="submit" class="btn">Submit Your Order</button>
+        </form>
       </div>
 
     </div>
