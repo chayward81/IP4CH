@@ -6,6 +6,7 @@ function Pizza(sizeCost, meatCost, vegetableCost, sauceCost) {
 }
 
 Pizza.prototype.pizzaQuote = function () {
+  var totalCost = 0;
 
 
 }
@@ -15,6 +16,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     var sizeChoice = $("input.size").val();
+
     var meatChoice = $("input.meat").val();
     var vegChoice = $("input.vegetable").val();
     var sauceChoice = $("input.sauce").val();
