@@ -24,38 +24,38 @@
           <h4>What size pizza do you want grasshopper?</h4>
 
           <form id="menu">
-            <div class="checkbox">
-              <label><input type="checkbox" id="size" value="sm">Small</label>
+            <div class="checkbox" id="small">
+              <label><input type="checkbox">Small</label>
             </div>
-            <div class="checkbox">
-              <label><input type="checkbox" id="size" value="md">Medium</label>
+            <div class="checkbox" id="medium">
+              <label><input type="checkbox">Medium</label>
             </div>
-            <div class="checkbox">
-              <label><input type="checkbox" id="size" value="lg">Large</label>
+            <div class="checkbox" id="large">
+              <label><input type="checkbox">Large</label>
             </div>
           </div>
 
           <div class="col-md-4">
             <h4>Meat Choices - Find your inner savage</h4>
             <div class="checkbox">
-              <label><input type="checkbox" class="meat">Bulgogi Beef</label>
+              <label><input type="checkbox" id="meat1">Bulgogi Beef</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" class="meat">Rattlesnake</label>
+              <label><input type="checkbox" id="meat2">Rattlesnake</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" class="meat">Roasted Pheasant</label>
+              <label><input type="checkbox" id="meat3">Roasted Pheasant</label>
             </div>
 
             <h4>Vegetables and Stuff - Rediscover the Australopithecus in You</h4>
             <div class="checkbox">
-              <label><input type="checkbox" class="vegetable">Swiss Chard</label>
+              <label><input type="checkbox" id="veg1">Swiss Chard</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" class="vegetable">Bamboo</label>
+              <label><input type="checkbox" id="veg2">Bamboo</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" class="vegetable">Oyster Mushrooms</label>
+              <label><input type="checkbox" id="veg3">Oyster Mushrooms</label>
             </div>
           </div>
 
@@ -74,6 +74,10 @@
 
           <button id="submitOrder" button-type="submit" class="btn">Submit Your Order</button>
         </form>
+
+        <div class="pizzaOrder">
+
+        </div>
       </div>
 
     </div>
